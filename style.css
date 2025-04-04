@@ -1,0 +1,133 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('Virtual Assistant.jpg') no-repeat center center/cover;
+    color: #e0e0e0;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(15, 15, 15, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    max-width: 650px;
+    width: 90%;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffcc00;  /* Bright Gold */
+    text-shadow: 0 2px 5px rgba(255, 204, 0, 0.7);
+    animation: slideDown 1.2s ease-in-out;
+}
+
+/* Description Text */
+p {
+    font-size: 1.2rem;
+    color: #b0b0b0; /* Soft gray for contrast */
+    margin-top: 10px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Section Headers */
+h2 {
+    font-size: 1.6rem;
+    color: #00ffcc; /* Neon Cyan */
+    margin-top: 20px;
+    text-shadow: 0 2px 5px rgba(0, 255, 204, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Get Started Button */
+.btn {
+    display: inline-block;
+    padding: 14px 35px;
+    margin-top: 30px;
+    background: linear-gradient(45deg, #ff8800, #ff4444);
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 5px 15px rgba(255, 136, 0, 0.5);
+    position: relative;
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background: linear-gradient(45deg, #ff4444, #ff8800);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(255, 68, 68, 0.7);
+}
+
+/* Button Click Effect */
+.btn:active {
+    transform: scale(0.95);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        font-size: 1.1rem;
+        padding: 12px 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+

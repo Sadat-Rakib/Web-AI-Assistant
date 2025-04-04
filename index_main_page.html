@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Virtual Assistant</title>
+    <link rel="stylesheet" href="style_main_page.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.2/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Additional styles for glowing text effects */
+        .glow-red {
+            text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000;
+            animation: breathe 2s ease-in-out infinite;
+        }
+        .glow-blue {
+            text-shadow: 0 0 10px #0000ff, 0 0 20px #0000ff, 0 0 30px #0000ff;
+            animation: breathe 2s ease-in-out infinite;
+        }
+        .glow-green {
+            text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00;
+            animation: breathe 2s ease-in-out infinite;
+        }
+        @keyframes breathe {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center min-h-screen">
+
+    <div class="container">
+        <!-- Title with glow effect -->
+        <h1 class="text-4xl font-extrabold text-white glow-red breathing">🤖 Virtual AI Assistant</h1>
+        <h2 class="text-xl text-white glow-blue mb-4 breathing">Smart Voice-Controlled Web Assistant</h2>
+
+        <!-- Instructional text with glow effect -->
+        <p class="text-lg text-white glow-green mb-4 breathing">🎤 <i>How to Use:</i></p>
+        <p class="text-lg text-white glow-red mb-4 breathing">1. Click the **"Start Listening"** button below and say a command (e.g., "Open YouTube").</p>
+        <p class="text-lg text-white glow-blue mb-4 breathing">2. Your assistant will help you navigate websites easily.</p>
+        <p class="text-lg text-white glow-green mb-6 breathing">3. Future updates will bring more AI-powered features!</p>
+
+        <button id="listen-btn" class="bg-gradient-to-r from-green-400 via-green-500 to-green-600 text-white py-3 px-6 rounded-full hover:scale-105 transform transition duration-300">
+            🎙️ Start Listening
+        </button>
+
+        <div id="output" class="output mt-4 text-lg text-white">
+            <p>Hello, how can I help you?</p> <!-- Displayed after button click -->
+        </div>
+    </div>
+
+    <!-- Link to external script file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
