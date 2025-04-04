@@ -40,26 +40,19 @@ JavaScript (Web Speech API) – Voice Recognition & AI Responses
 
 Clone the repository and open the index.html file in your browser.
 
-bash
-Copy
-Edit
-
-## Clone this repository
-
+# Clone this repository
 git clone https://github.com/Sadat-Rakib/Web-AI-Assistant.git
 
 # Navigate to the project folder
-
 cd ai-virtual-assistant
 
 # Open in browser
-
 start index.html (Windows)  
 open index.html (Mac)  
 
 ## Live Demo 🔥
 
-Check out the live demo here: Demo Link
+Check out the live demo here: https://sadat-rakib.github.io/Web-AI-Assistant/
 
 ## Sample Voice Commands 🎤
 
