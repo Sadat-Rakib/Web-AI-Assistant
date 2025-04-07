@@ -1,4 +1,4 @@
-## Web-AI-Assistant 🤖
+## PixelPal 🤖
 
 A Voice-Controlled Web Assistant for Seamless Task Execution! 🎙️💡
 
